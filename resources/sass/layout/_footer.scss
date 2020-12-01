@@ -1,0 +1,13 @@
+// Set maxmimum height of the footer in vh
+footer {
+  max-height: 40vh;
+
+  // Giving image some margin around each other except the first and the last one
+  img {
+    width: 50px;
+    height: 20px;
+  }
+
+  img:first-child {
+  }
+}

@@ -514,3 +514,25 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid; } }
+
+.wrapper {
+  min-width: 300px; }
+
+.header {
+  height: 90px;
+  max-height: 120px; }
+
+footer {
+  max-height: 40vh; }
+  footer img {
+    width: 50px;
+    height: 20px; }
+
+::-moz-placeholder {
+  color: red; }
+
+:-ms-input-placeholder {
+  color: red; }
+
+::placeholder {
+  color: red; }

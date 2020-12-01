@@ -18,13 +18,12 @@
       gtag('config', 'UA-184130818-1');
     </script>
     <meta charset="utf-8" />
-    <title>images.html page</title>
+    <title>Form PHP</title>
     <meta name="description" content="" />
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <!-- <link rel="stylesheet" href="vendors/js-css__libraries/font-awesome/css/fontawesome.min.css"> -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -36,37 +35,502 @@
     <meta property="og:image" content="" />
 
     <!--build:css css/main.min.css -->
-    <!-- <link rel="stylesheet" href="vendors/js-css__libraries/bootstrap/dist/css/bootstrap.min.css"> -->
+
+    <script src="vendors/js-css__libraries/modernizr__library/modernizr--custom.js"></script>
+    <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
-      integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="resources/css/style.css" />
     <!-- endbuild -->
-
-    <!-- <script src="vendors/js-css__libraries/modernizr__library/modernizr.js"></script> -->
-    <script src="vendors/js-css__libraries/modernizr__library/modernizr--custom.js"></script>
   </head>
 
   <body>
     <!-- Add your site or application content here -->
+    <!-- Wrapper starts here -->
+    <div class="wrapper">
+      <!-- Main bootstrap container starts here -->
+      <div class="container-fluid">
+        <!-- Container starts here -->
+        <div class="container mx-auto my-3">
+          <!-- Main row / form starts here -->
+          <div class="row">
+            <!-- Header starts here -->
+            <header
+              class="header col d-flex align-items-start justify-content-center"
+            >
+              <img
+                class="img-fluid"
+                role="img"
+                src="https://ipaytotal.solutions/newTheme/assets/img/logo.png"
+                alt="An image in the header section of the site of the company ipaytotal"
+                width="250px"
+              />
+            </header>
+            <!-- Header ends here -->
+          </div>
+          <!-- Main row / form ends here -->
 
+          <!-- Form row starts here -->
+          <div class="row">
+            <div class="col-12">
+              <!-- Form starts here -->
+              <form
+                novalidate
+                class="needs-validation"
+                action=""
+                method="get"
+                enctype="multipart/form-data"
+              >
+                <fieldset class="border p-5">
+                  <legend class="w-auto text-muted small text-uppercase">
+                    billing info
+                  </legend>
+                  <!-- Nested row 1 starts here -->
+                  <div class="row">
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="first__name"
+                        >first name
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        required
+                        class="form-control"
+                        type="text"
+                        placeholder="First Name"
+                        name="first__name"
+                        id="first__name"
+                      />
+                      <p class="valid-feedback">Great</p>
+                      <p class="invalid-feedback">
+                        Please enter a valid first name
+                      </p>
+                    </div>
+
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="last__name"
+                        >last name
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        required
+                        class="form-control"
+                        type="text"
+                        placeholder="Last Name"
+                        name="last__name"
+                        id="last__name"
+                      />
+                      <p class="valid-feedback">Great</p>
+                      <p class="invalid-feedback">
+                        Please enter a valid last name
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Nested row 1 ends here -->
+                  <!-- Nested row 2 starts here -->
+                  <div class="row">
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="address"
+                        >address
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        required
+                        class="form-control"
+                        type="text"
+                        placeholder="Address"
+                        name="address"
+                        id="address"
+                      />
+                      <p class="valid-feedback">Great</p>
+                      <p class="invalid-feedback">
+                        Please enter a valid address
+                      </p>
+                    </div>
+
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="order__id"
+                        >customer order id number
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        required
+                        class="form-control"
+                        type="number"
+                        placeholder="Customer Order Id Number"
+                        name="order__id"
+                        id="order__id"
+                      />
+                      <p class="valid-feedback">Great</p>
+                      <p class="invalid-feedback">
+                        Please enter a valid order id
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Nested row 2 ends here -->
+                  <!-- Nested row 3 starts here -->
+                  <div class="row">
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="first__name"
+                        >country
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <select
+                        required
+                        name="country"
+                        id="country"
+                        class="form-control form-control-lg"
+                      >
+                        <option disabled selected value="india">
+                          -- Select Country Type --
+                        </option>
+                        <option value="india">india</option>
+                        <option value="egypt">egypt</option>
+                        <option value="oman">oman</option>
+                        <option value="uae">uae</option>
+                        <option value="qatar">qatar</option>
+                      </select>
+                      <p class="valid-feedback">Great</p>
+                      <p class="invalid-feedback">Please select the country</p>
+                    </div>
+
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="state"
+                        >State
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        required
+                        class="form-control form-control-lg"
+                        type="text"
+                        placeholder="State"
+                        name="state"
+                        id="state"
+                      />
+                      <p class="valid-feedback">Great</p>
+                      <p class="invalid-feedback">Please enter a state</p>
+                    </div>
+                  </div>
+                  <!-- Nested row 3 ends here -->
+                  <!-- Nested row 4 starts here -->
+                  <div class="row">
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="city"
+                        >city
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        required
+                        class="form-control"
+                        type="text"
+                        placeholder="City"
+                        name="city"
+                        id="city"
+                      />
+                      <p class="valid-feedback">Great</p>
+                      <p class="invalid-feedback">Please enter a city</p>
+                    </div>
+
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="zip"
+                        >zip code
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        required
+                        class="form-control"
+                        type="number"
+                        placeholder="Zip Code"
+                        name="zip"
+                        id="zip"
+                      />
+                      <p class="valid-feedback">Great</p>
+                      <p class="invalid-feedback">
+                        Please enter a valid zip code
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Nested row 4 ends here -->
+                  <!-- Nested row 5 starts here -->
+                  <div class="row">
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="email"
+                        >email
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <i
+                            class="input-group-text fa fa-hand-pointer-o bg-light"
+                            aria-hidden="true"
+                          ></i>
+                        </div>
+                        <input
+                          required
+                          class="form-control"
+                          type="email"
+                          placeholder="Email"
+                          name="email"
+                          id="email"
+                        />
+
+                        <span class="valid-feedback">Great</span>
+                        <span class="invalid-feedback"
+                          >Please enter your email</span
+                        >
+                      </div>
+                      <small class="form-text text-muted"
+                        >eg. abc@example.com</small
+                      >
+                    </div>
+
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="phone"
+                        >phone no.
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <i
+                            class="input-group-text fa fa-phone bg-light"
+                            aria-hidden="true"
+                          ></i>
+                        </div>
+                        <input
+                          required
+                          class="form-control"
+                          type="number"
+                          placeholder="Phone No."
+                          name="phone"
+                          id="phone"
+                        />
+                        <span class="valid-feedback">Great</span>
+                        <span class="invalid-feedback">
+                          Please enter your phone number
+                        </span>
+                      </div>
+                      <small class="form-text text-muted"
+                        >eg. 963******55</small
+                      >
+                    </div>
+                  </div>
+                  <!-- Nested row 5 ends here -->
+                  <!-- Nested row 6 starts here -->
+                  <div class="row">
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="amount"
+                        >amount
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <i
+                            class="input-group-text fa fa-money bg-light"
+                            aria-hidden="true"
+                          ></i>
+                        </div>
+                        <input
+                          required
+                          class="form-control form-control-lg"
+                          type="text"
+                          placeholder="Amount"
+                          name="amount"
+                          id="amount"
+                        />
+                      </div>
+                      <p class="valid-feedback">Great</p>
+                      <p class="invalid-feedback">Please enter the amount</p>
+                    </div>
+
+                    <div class="col-12 col-sm-6 form-group">
+                      <label class="text-capitalize" for="currency"
+                        >currency
+                        <span class="text-danger font-weight-bolder"
+                          >*</span
+                        ></label
+                      >
+                      <select
+                        class="form-control form-control-lg"
+                        name="currency"
+                        id="currency"
+                      >
+                        <option disabled selected class="text-muted" value="">
+                          Currency
+                        </option>
+                        <option value="Inr">Inr</option>
+                        <option value="Us$">Us$</option>
+                        <option value="Uk$">Uk$</option>
+                        <option value="Gbp">Gbp</option>
+                        <option value="Euro">Euro</option>
+                      </select>
+                      <p class="valid-feedback">Great</p>
+                      <p class="invalid-feedback">Please choose a currency</p>
+                    </div>
+                  </div>
+                  <!-- Nested row 6 ends here -->
+                </fieldset>
+
+                <hr />
+
+                <!-- Buttons layout starts here -->
+                <button
+                  class="col-4 col-md-3 my-2 btn btn-success text-capitalize"
+                  type="submit"
+                >
+                  Submit
+                </button>
+                <button
+                  class="col-4 col-md-3 my-3 ml-3 btn btn-warning text-capitalize"
+                  type="reset"
+                >
+                  Cancel
+                </button>
+                <!-- Buttons layout ends here -->
+
+                <hr />
+              </form>
+              <!-- Form ends here -->
+            </div>
+          </div>
+          <!-- Form row ends here -->
+        </div>
+        <!-- Container ends here -->
+        <!-- Footer starts here -->
+        <footer
+          class="row p-3 pb-4 d-flex justify-content-center align-content-start flex-wrap bg-light"
+        >
+          <img
+            class="mt-3 img-fluid"
+            src="/resources/html__images/payment-cards/payment-card.jpg"
+            alt="payment card"
+          />
+          <img
+            class="ml-1 mt-3 ml-md-3 ml-lg-5 img-fluid"
+            src="/resources/html__images/payment-cards/payment-card.jpg"
+            alt="payment card"
+          />
+          <img
+            class="ml-1 mt-3 ml-md-3 ml-lg-5 img-fluid"
+            src="/resources/html__images/payment-cards/payment-card.jpg"
+            alt="payment card"
+          />
+          <img
+            class="ml-1 mt-3 ml-md-3 ml-lg-5 img-fluid"
+            src="/resources/html__images/payment-cards/payment-card.jpg"
+            alt="payment card"
+          />
+          <img
+            class="ml-1 mt-3 ml-md-3 ml-lg-5 img-fluid"
+            src="/resources/html__images/payment-cards/payment-card.jpg"
+            alt="payment card"
+          />
+          <img
+            class="ml-1 mt-3 ml-md-3 ml-lg-5 img-fluid"
+            src="/resources/html__images/payment-cards/payment-card.jpg"
+            alt="payment card"
+          />
+          <img
+            class="ml-1 mt-3 ml-md-3 ml-lg-5 img-fluid"
+            src="/resources/html__images/payment-cards/payment-card.jpg"
+            alt="payment card"
+          />
+          <img
+            class="ml-1 mt-3 ml-md-3 ml-lg-5 img-fluid"
+            src="/resources/html__images/payment-cards/payment-card.jpg"
+            alt="payment card"
+          />
+          <img
+            class="ml-1 mt-3 ml-md-3 ml-lg-5 img-fluid"
+            src="/resources/html__images/payment-cards/payment-card.jpg"
+            alt="payment card"
+          />
+          <img
+            class="ml-1 mt-3 ml-md-3 ml-lg-5 img-fluid"
+            src="/resources/html__images/payment-cards/payment-card.jpg"
+            alt="payment card"
+          />
+          <img
+            class="mt-3 ml-1 ml-md-3 ml-lg-5 img-fluid"
+            src="/resources/html__images/payment-cards/payment-card.jpg"
+            alt="payment card"
+          />
+        </footer>
+        <!-- Footer ends here -->
+      </div>
+      <!-- Main bootstrap container ends here -->
+    </div>
+    <!-- Wrapper ends here -->
     <!-- build:js js/main.min.js -->
-    <!-- <script src="vendors/js-css__libraries/jquery/dist/jquery.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-    <!-- <script src="vendors/js-css__libraries/bootstrap/dist/js/bootstrap.min.js"></script> -->
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"
-      integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
-      crossorigin="anonymous"
-    ></script>
 
     <script src="resources/js/index.js"></script>
     <!-- end build -->
+
+    <script>
+      // Disable form submissions if there are invalid fields
+      (function () {
+        window.addEventListener(
+          // prettier-ignore
+          'load',
+          function () {
+            // Get the forms we want to add validation styles to
+            // prettier-ignore
+            const forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            // prettier-ignore
+
+            // eslint-disable-next-line no-unused-vars
+            const validation = Array.prototype.filter.call(forms, function (
+              form
+            ) {
+              form.addEventListener(
+                'submit',
+                function (event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                },
+                false
+              );
+            });
+          },
+          false
+        );
+      })();
+    </script>
   </body>
 </html>
